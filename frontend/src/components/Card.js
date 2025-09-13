@@ -484,7 +484,7 @@ const UiverseWrapper = styled.div`
   }
 
   & .description {
-    position: relative;
+    position: absolute;
     bottom: .5rem;
     left: .05rem;
     text-align: start;
