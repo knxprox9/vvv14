@@ -383,64 +383,6 @@ const StyledWrapper = styled.div`
 
 `;
 
-const LoaderWrapper = styled.div`
-  .loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.4);
-    padding: 5px 0;
-  }
-
-  .l,.l:nth-child(9) {
-    margin: 0.12em;
-    border-radius: 5em;
-    width: 0.3em;
-    background-color: #ffffff;
-    height: 2.5em;
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
-    animation: load_5186 cubic-bezier(.41,.44,.72,.69) 1.5s infinite;
-  }
-
-  .l:nth-child(2), 
-  .l:nth-child(8) {
-    background-color: rgba(255, 255, 255, 0.9);
-    animation-delay: .2s;
-  }
-
-  .l:nth-child(3), 
-  .l:nth-child(7) {
-    background-color: rgba(255, 255, 255, 0.8);
-    animation-delay: .4s;
-  }
-
-  .l:nth-child(4), 
-  .l:nth-child(6) {
-    background-color: rgba(255, 255, 255, 0.7);
-    animation-delay: .6s;
-  }
-
-  .l:nth-child(5) {
-    background-color: rgba(255, 255, 255, 0.6);
-    animation-delay: .8s;
-  }
-
-  @keyframes load_5186 {
-    0% {
-      transform: scaleY(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scaleY(-1);
-      opacity: 0.8;
-    }
-    100% {
-      transform: scaleY(1);
-      opacity: 1;
-    }
-  }
-`;
-
 // غلاف مخصص يطبق الشيفرة الأصلية بالكامل مع نفس الأسماء والمؤثرات، دون تغيير، لكن مع حصر النطاق داخل الغلاف فقط
 const UiverseWrapper = styled.div`
   /* From uiverse.io by @FrM-bot */
