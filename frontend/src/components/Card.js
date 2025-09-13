@@ -22,31 +22,6 @@ const Card = () => {
     setSelectedSize(size);
   };
 
-  const handleMoreClick = () => {
-    setIsLoading(true);
-    // محاكاة عملية تحميل لمدة 3 ثوان
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  };
-
-  // مكون اللودر
-  const Loader = () => (
-    <LoaderWrapper>
-      <div className="loader">
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-      </div>
-    </LoaderWrapper>
-  );
-
   return (
     <StyledWrapper>
       <div className="card">
