@@ -400,6 +400,67 @@ const StyledWrapper = styled.div`
 
 `;
 
+const LoaderWrapper = styled.div`
+  display: inline-block;
+  margin-right: 8px;
+  
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.15);
+    margin: -8px -15px;
+  }
+
+  .l,.l:nth-child(9) {
+    margin: 0.08em;
+    border-radius: 5em;
+    width: 0.25em;
+    background-color: #ffffff;
+    height: 1.8em;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
+    animation: load_5186 cubic-bezier(.41,.44,.72,.69) 1.2s infinite;
+  }
+
+  .l:nth-child(2), 
+  .l:nth-child(8) {
+    background-color: rgba(255, 255, 255, 0.9);
+    animation-delay: .15s;
+  }
+
+  .l:nth-child(3), 
+  .l:nth-child(7) {
+    background-color: rgba(255, 255, 255, 0.8);
+    animation-delay: .3s;
+  }
+
+  .l:nth-child(4), 
+  .l:nth-child(6) {
+    background-color: rgba(255, 255, 255, 0.7);
+    animation-delay: .45s;
+  }
+
+  .l:nth-child(5) {
+    background-color: rgba(255, 255, 255, 0.6);
+    animation-delay: .6s;
+  }
+
+  @keyframes load_5186 {
+    0% {
+      transform: scaleY(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scaleY(-1);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleY(1);
+      opacity: 0.8;
+    }
+  }
+`;
+
 // غلاف مخصص يطبق الشيفرة الأصلية بالكامل مع نفس الأسماء والمؤثرات، دون تغيير، لكن مع حصر النطاق داخل الغلاف فقط
 const UiverseWrapper = styled.div`
   /* From uiverse.io by @FrM-bot */
