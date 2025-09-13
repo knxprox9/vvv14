@@ -401,17 +401,16 @@ const StyledWrapper = styled.div`
 `;
 
 const LoaderWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
   
   .loader {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.35);
+    transform: scale(0.25);
+    margin: -10px -12px;
   }
 
   .l,.l:nth-child(9) {
