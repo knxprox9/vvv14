@@ -395,7 +395,7 @@ const StyledWrapper = styled.div`
 
 `;
 
-const StyledWrapper = styled.div`
+const ArrowLoaderWrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
