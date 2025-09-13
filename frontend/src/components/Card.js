@@ -401,24 +401,26 @@ const StyledWrapper = styled.div`
 `;
 
 const LoaderWrapper = styled.div`
-  display: inline-block;
-  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   
   .loader {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.15);
-    margin: -8px -15px;
+    transform: scale(0.35);
   }
 
   .l,.l:nth-child(9) {
-    margin: 0.08em;
+    margin: 0.1em;
     border-radius: 5em;
-    width: 0.25em;
+    width: 0.3em;
     background-color: #ffffff;
-    height: 1.8em;
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
+    height: 2.2em;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
     animation: load_5186 cubic-bezier(.41,.44,.72,.69) 1.2s infinite;
   }
 
