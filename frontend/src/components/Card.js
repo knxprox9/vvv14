@@ -22,21 +22,15 @@ const Card = () => {
     setSelectedSize(size);
   };
 
-  // مكون اللودر المستمر
+  // مكون اللودر المستمر - نمط الأسهم
   const Loader = () => (
-    <LoaderWrapper>
-      <div className="loader">
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
-        <div className="l" />
+    <StyledWrapper>
+      <div className="arrow">
+        <span />
+        <span />
+        <span />
       </div>
-    </LoaderWrapper>
+    </StyledWrapper>
   );
 
   return (
