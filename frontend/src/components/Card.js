@@ -414,38 +414,39 @@ const LoaderWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scale(0.3);
   }
 
   .l,.l:nth-child(9) {
     margin: 0.15em;
     border-radius: 5em;
     width: 0.4em;
-    background-color: #f12711;
+    background-color: #ffffff;
     height: 3em;
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.3);
     animation: load_5186 cubic-bezier(.41,.44,.72,.69) 2s infinite;
   }
 
   .l:nth-child(2), 
   .l:nth-child(8) {
-    background-color: #f24e13;
+    background-color: #f8f9fa;
     animation-delay: .25s;
   }
 
   .l:nth-child(3), 
   .l:nth-child(7) {
-    background-color: #f36915;
+    background-color: #e9ecef;
     animation-delay: .5s;
   }
 
   .l:nth-child(4), 
   .l:nth-child(6) {
-    background-color: #f48c17;
+    background-color: #dee2e6;
     animation-delay: .75s;
   }
 
   .l:nth-child(5) {
-    background-color: #f5af19;
+    background-color: #ced4da;
     animation-delay: 1s;
   }
 
