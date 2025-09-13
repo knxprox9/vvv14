@@ -126,9 +126,10 @@ const Card = () => {
                   </div>
                 </div>
                 <div className="description card">
-                  <span className="title">
-                    المزيد <Loader />
+                  <span className="title" style={{opacity: 0}}>
+                    المزيد
                   </span>
+                  <Loader />
                 </div>
               </div>
             </div>
