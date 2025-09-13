@@ -24,13 +24,13 @@ const Card = () => {
 
   // مكون اللودر المستمر - نمط الأسهم
   const Loader = () => (
-    <StyledWrapper>
+    <ArrowLoaderWrapper>
       <div className="arrow">
         <span />
         <span />
         <span />
       </div>
-    </StyledWrapper>
+    </ArrowLoaderWrapper>
   );
 
   return (
