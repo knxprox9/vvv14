@@ -108,9 +108,9 @@ const Card = () => {
                     </div>
                   </div>
                 </div>
-                <div className="description card" onClick={handleMoreClick}>
+                <div className="description card">
                   <span className="title">
-                    {isLoading ? <Loader /> : 'المزيد'}
+                    المزيد
                   </span>
                 </div>
               </div>
