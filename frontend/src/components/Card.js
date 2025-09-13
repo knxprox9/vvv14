@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Card = () => {
   const [selectedColor, setSelectedColor] = useState(1); // Default to second color (Team Navy)
   const [selectedSize, setSelectedSize] = useState('s'); // Default size
-  const [isLoading, setIsLoading] = useState(false); // حالة اللودر
 
   const colors = [
     { id: 0, name: 'ذهبي جامعي', color: '#ffd426' },
